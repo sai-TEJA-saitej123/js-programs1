@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 1)give 10 names in an array , ask user input a name , check if the name is in the array or not
+    // if there? print the name existed
+    // if not there ? print name is not existed
+
+    var array = ["zad", "aju", "kai", "chill", "zoro", "kaizen", "sair", "hamo", "tatsu", "remo"]
+    var userInput = prompt("Please enter your name:");
+    console.log("User entered: " + userInput);
+    if (array.includes(userInput)) {
+        console.log("name is exsisted!");
+    }
+    else {
+        console.log("name doesnt exsist!");
+    }
+
+    //2. input : enter how many numbers need to be generated: 5
+    //  ouput : generate 5 random numbers
+    var chill = prompt("enter how many numbers need to be generated:");
+    function abcd() {
+        for (var i = 0; i <= 4; i++) {
+            console.log(Math.random());
+        }
+    }
+    abcd();
+
+    //  program to add two numbers of users inputs
+    // input: frst number: 10
+    // second: 20
+    // output : 30
+
+    let din1 = prompt("enter oka number pilla:");
+    let din2 = prompt("second number enter cheyva:");
+    let b1 = parseInt(din1);
+    let b2 = parseInt(din2);  //converts string into no.
+    let din3 = (b1 + b2);
+    console.log("total number entante: " + din3);
+
+    // check if the entered number is prime or not
+    var num, i, chk = 0;
+    num = 19;
+    for (i = 2; i < num; i++) {
+        if (num % 2 == 0) {
+            chk++;
+            break;
+        }
+    }
+    if (chk == 0)
+        document.write(num + " is a Prime Number");
+    else
+        document.write(num + " is not a Prime Number");
+
+
+    // program to find the ASCII value of a character
+
+    const string = prompt('Enter a character: ');
+    const result = string.charCodeAt(0);
+    console.log(`The ASCII value is: ${result}`);
+
+
+
+</script>
+
+</html>
